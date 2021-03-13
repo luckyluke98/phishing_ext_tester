@@ -74,6 +74,8 @@ if __name__ == '__main__':
 	print('Start hostname analysis:')
 
 	total = 0
+	pos = 0
+	neg = 0
 	TP = 0
 	TN = 0
 	FP = 0
@@ -89,6 +91,9 @@ if __name__ == '__main__':
 		
 		protocol = res[0]
 		url = res[1]
+
+		if url!= None and not url.endswith('/'):
+			url = f'{url}/'
 
 		if protocol == "https":
 			cert_info = get_cert_info(hostname)
@@ -122,20 +127,23 @@ if __name__ == '__main__':
 
 			if predict == 0 and dataset['data'][hostname] == 0:
 				TN += 1
+				neg += 1
 			elif predict == 0 and dataset['data'][hostname] == 1:
 				FN += 1
+				pos += 1
 			elif predict == 1 and dataset['data'][hostname] == 1:
 				TP += 1
+				pos += 1
 			else:
 				FP += 1
+				neg +=1
 
 	#endfor
-	print('\n')
+	print(f'[Done] Tot. analyzed: {total}\n')
 	table_data = [
-	    [' TOT:\n{}'.format(total),'Actual:\nPOS', 'Actual: \nNEG'],
+	    [' TOT:{}\npos: {}\nneg: {}'.format(total, pos, neg),'Actual:\nPOS', 'Actual: \nNEG'],
 	    ['Predicted:\nPOS',   TP,            FP],
 	    ['Predicted:\nNEG',   FN,            TN]
-	    
 	]
 	table = AsciiTable(table_data)
 	table.inner_row_border = True
@@ -143,6 +151,14 @@ if __name__ == '__main__':
 	table.justify_columns[1] = 'center'
 	table.justify_columns[2] = 'center'
 	print('{}'.format(table.table))
+	print('\n')
+	table_data = [
+		['Sensitivity', 'Specificity', 'Accuracy', 'Precision'],
+		[round((TP)/(TP+FN), 2),round((TN)/(TN+FP), 2),round((TP+TN)/(TP+TN+FP+FN), 2),round((TP)/(TP+FP), 2)]
+	]
+
+	table_res = AsciiTable(table_data)
+	print(table_res.table)
 
 
 

@@ -112,12 +112,6 @@ def is_multidomain_url(url):
 	dot_count = res[0].count(".")
 	return -1 if dot_count < 5 else 1
 
-def is_hyphen_url(url):
-	res = re.match(r"^http.*://(.*)", url).groups()
-	res = re.split("/", res[0])
-	return 0 if re.match("-", res[0]) == None else 1
-
-
 ##CONTENT
 
 def is_mailto_available(html):
@@ -143,7 +137,7 @@ def is_img_from_different_domain(html,url):
 
 def is_favicon_domain_unidentical(html,url):
 	favicon = html.find_all(rel=re.compile("(shortcut icon|SHORTCUT ICON)"))
-	url_domain = re.search(r'//.*[a-zA-Z](/|#|:)', url)######
+	url_domain = re.search(r'^http.{0,1}://[^/#:]+(/|#|:)', url)######
 	url_domain = url[0:url_domain.span()[1]-1]
 
 	if len(favicon) > 0:
@@ -216,7 +210,7 @@ def is_form_action_invalid(html, url):
 
 def get_identical_count(html, url, tag):
 	node_list = html.find_all(tag)
-	url_domain = re.search(r'//.*[a-zA-Z](/|#|:)', url)#####
+	url_domain = re.search(r'^http.{0,1}://[^/#:]+(/|#|:)', url)#####
 	url_domain = url[0:url_domain.span()[1]-1]
 	count = 0
 
@@ -284,7 +278,7 @@ def score_cert(cert_info):
 	
 	score += is_issued_from_free_ca(cert_info)*10
 	score += is_DV_certificate(cert_info)*10
-	print('\t Score CERT: {}'.format(score))
+	#print('\t Score CERT: {}'.format(score))
 
 	return score
 
@@ -301,7 +295,7 @@ def score_domain(hostname):
 	score += levenshtein_distance(hostname)
 	score += lot_of_dash(hostname)*3
 	score += nested_subdomains(hostname)*3
-	print('\t Score DOMAIN: {}'.format(score))
+	#print('\t Score DOMAIN: {}'.format(score))
 
 	return score
 
@@ -315,14 +309,13 @@ def score_url(url):
 	score += is_redirecting_url(url)*(3.894)
 	score += is_illegal_https_url(url)*(-0.0006)#-
 	score += is_multidomain_url(url)*(4.443)
-	#score += is_hyphen_url(url)*(19.999)
-	print('\t Score URL: {}'.format(score))
+	#print('\t Score URL: {}'.format(score))
 
 	return score
 
 def score_html(html, url):
 	score = 0
-
+	
 	score += is_mailto_available(html)*(0.557)
 	score += is_iframe_present(html)*(-1.666)#-
 	score += is_img_from_different_domain(html, url)*(3.332)
@@ -330,7 +323,7 @@ def score_html(html, url):
 	score += is_anchor_from_different_domain(html, url)*(26.664)
 	score += is_scriptlink_from_different_domain(html, url)*(6.667)
 	score += is_form_action_invalid(html, url)*(5.554)
-	print('\t Score HTML: {}'.format(score))
+	#print('\t Score HTML: {}'.format(score))
 
 	return score
 
@@ -368,7 +361,6 @@ def detect(html='', cert_info='', url='', hostname='', sus='', valid=''):
 		score += score_domain(hostname)
 		score += score_url(url)
 
-	
 	#print(int(round(score)))
 	return int(round(score))
 

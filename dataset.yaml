@@ -1,4 +1,21 @@
 data:
+  #hostname: 0(not phishing) or 1(phishing)
+  'onedrive.com': 0
+  'icloud.com': 0
+  'protonmail.com': 0
+  'yandex.ru': 0
+  'gmailmihelphelp.zendesk.com': 1
+  'blog.shop.wp.drop-air.top': 1
+  'alertmanager.achew22.com': 1
+  'dev.shop.secure.gideonhack.pw': 1
+  'blockchain.princeblb.com': 1
+  'www.greatcleanersatlanta-com.dev.1dxr.com': 1
+  'www.besafepestcontrol-com.dev.1dxr.com': 1
+  'www.london-window-cleaning-com.dev.1dxr.com': 1
+  'www.lukescleaningservices-com.dev.1dxr.com': 1
+  'verifycopyrightportal.com': 1
+  'webmail.amazonvine.eu': 1
+  'www.amazonvine.eu': 1
   'www.github.com': 0
   'www.toolshopstore.com.healthwatchers.com.au': 1
   'googleaccounts.co': 1
@@ -87,6 +104,48 @@ data:
   'jetorev78-001-site1.dtempurl.com': 1
   'appleid.apple.com.updatelink.org': 1
   'aibpaymentroireview.com': 1
+  'olx.pay-id.site': 1
+  'tcolhjifjcddepbclghckcjraw-dot-gle39404049.rj.r.appspot.com': 1
+  'lmgxzmmkheehnixsnhktkdmkgr-dot-gle39404049.rj.r.appspot.com': 1
+  'ssqbjxlizwszuhumnebriuynzi-dot-gle39404049.rj.r.appspot.com': 1
+  'qiwi.com': 0
+  'vodafone.co.uk': 0
+  'www.youtube.com': 0
+  'banking.bankaustria.at': 0
+  'oc5p5jb3eyyqrvmlqpftgsrflm--www-paypal-com.translate.goog': 0
+  'wiki.zimbra.com': 0
+  'www.synacor.com': 0
+  'www.nedbank.co.za': 0
+  'www.fidelity.co.uk': 0
+  'soundcloud.com': 0
+  'black-baronne.fr': 0
+  'www.banking-oberbank.at': 0
+  'www.bing.com': 0
+  'prostocash.com': 0
+  'swappa.it': 0
+  'google.com': 0
+  'microsoft.com': 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
