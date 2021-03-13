@@ -363,7 +363,3 @@ def detect(html='', cert_info='', url='', hostname='', sus='', valid=''):
 
 	#print(int(round(score)))
 	return int(round(score))
-
-
-
-
