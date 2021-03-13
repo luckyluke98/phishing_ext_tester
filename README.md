@@ -29,7 +29,7 @@ Per verificare il corretto rilevamento, i valori (0 o 1) risultanti, verranno co
 data:
   ...
   'safe_domain': 0
-  'phishing_domain: 1'
+  'phishing_domain': 1
   ...
 ```
 Al termine dello script verranno visualizzati i seguneti risulati (risultati per ```dataset.yaml```):
