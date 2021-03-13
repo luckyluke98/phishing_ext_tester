@@ -60,7 +60,7 @@ Per eseguire lo script sarà sufficiente eseguire:
 ```shell
 $ python3 main.py 
 ```
-Dipendenze:
+Requisiti
 
 * bs4
 * termcolor
