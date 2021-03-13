@@ -1,0 +1,145 @@
+domains:
+#Microfost
+    'microsoft.com':
+    'office.com':
+    'microsoftonline.com':
+    'microsoft365.com':
+    'skype.com':
+    'onedrive.com':
+
+#Apple
+    'www.itunes.com':
+    'apple.com':
+    'icloud.com':
+
+#Protonmail
+    'protonmail.com':
+    'protonmail.ch':
+    'protonvpn.com':
+    'pm.me':
+
+#Google
+    'google.com':
+    'android.com':
+    'google-analytics.com':
+    'google.ca':
+    'google.cl':
+    'google.co.in':
+    'google.co.jp':
+    'google.co.uk':
+    'google.com.ar':
+    'google.com.au':
+    'google.com.br':
+    'google.com.co':
+    'google.com.mx':
+    'google.com.tr':
+    'google.com.vn':
+    'google.de':
+    'google.es':
+    'google.fr':
+    'google.hu':
+    'google.it':
+    'google.nl':
+    'google.pl':
+    'google.pt':
+    'googlevideo.com':
+    'youtube.com':
+    'youtubekids.com':
+    'yt.be':
+    'g.co':
+    'goo.gl':
+    'urchin.com':
+    'youtu.be':
+    'youtubeeducation.com':
+
+#yahoo
+    'yahoo.com':
+    'yahoo.net':
+
+#Yandex
+    'xn--d1acpjx3f.xn--p1ai':
+    'yandex.ru':
+    'yandex.com':
+
+#Twitter
+    'twitter.com':
+
+#Facebook
+    'facebook.com':
+    'facebook.net':
+    'messenger.com':
+
+#Tumblr
+    'tumblr.com':
+
+#Reddit
+    'reddit.com':
+    'reddithelp.com':
+
+#Linkedin
+    'linkedin.com':
+
+#Instagram
+    'instagram.com':
+
+#Flickr
+    'flickr.com':
+
+#Whatsapp
+    'whatsapp.net':
+    'whatsappbrand.com':
+
+#Bitcoin
+    'localbitcoins.com':
+    'poloniex.com':
+    'bithumb.com':
+    'kraken.com':
+    'bitstamp.com':
+    'bitstamp.net':
+    'blockchain.com':
+    'bitflyer.com':
+    'coinbase.com':
+    'hitbtc.com':
+    'lakebtc.com':
+    'bitcoin.org':
+    'bitfinex.com':
+    'coinsbank.com':
+
+#Paypal
+    'paypal.com':
+
+#Bank
+    'moneygram.com':
+    'westernunion.com':
+    'bankofamerica.com':
+    'wellsfargo.com':
+    'citi.com':
+    'santanderconsumer.it':
+    'morganstanley.com':
+    'barclays.com':
+    'barclays.co.uk':
+    'hsbc.com':
+    'tdameritrade.com':
+    'merrilledge.com':
+    'unipol.it':
+    'intesasanpaolo.com':
+
+
+#Amazon
+    'amazon.com':
+    'amazon.it':
+
+#Alibaba
+    'alibaba.com':
+    'aliexpress.com':
+
+#Netflix
+    'netflix.com':
+
+#Github
+    'github.com':
+    'github.blog':
+
+#Dropbox
+    'dropbox.com':
+
