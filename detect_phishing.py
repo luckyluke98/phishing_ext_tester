@@ -303,11 +303,11 @@ def score_url(url):
 	score = 0
 
 	score += is_ip_url(url)*(3.333)
-	score += is_long_url(url)*(-1.112)#-
-	score += is_tiny_url(url)*(-7.778)#-
+	score += is_long_url(url)*(-1.112)
+	score += is_tiny_url(url)*(-7.778)
 	score += contains_at(url)*(1.110)
 	score += is_redirecting_url(url)*(3.894)
-	score += is_illegal_https_url(url)*(-0.0006)#-
+	score += is_illegal_https_url(url)*(-0.0006)
 	score += is_multidomain_url(url)*(4.443)
 	#print('\t Score URL: {}'.format(score))
 
@@ -317,9 +317,9 @@ def score_html(html, url):
 	score = 0
 	
 	score += is_mailto_available(html)*(0.557)
-	score += is_iframe_present(html)*(-1.666)#-
+	score += is_iframe_present(html)*(-1.666)
 	score += is_img_from_different_domain(html, url)*(3.332)
-	score += is_favicon_domain_unidentical(html, url)*(-2.779)#-
+	score += is_favicon_domain_unidentical(html, url)*(-2.779)
 	score += is_anchor_from_different_domain(html, url)*(26.664)
 	score += is_scriptlink_from_different_domain(html, url)*(6.667)
 	score += is_form_action_invalid(html, url)*(5.554)
