@@ -71,5 +71,7 @@ Dipendenze:
 * tldextract
 * Levenshtein
 
+![Image](https://github.com/luckyluke98/phishing_ext_tester/blob/main/images/screen.gif)
+
 ## Licenza
 GNU GPLv3
