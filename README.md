@@ -33,7 +33,7 @@ data:
   ...
 ```
 Al termine dello script verranno visualizzati i seguneti risulati (risultati per ```dataset.yaml```):
-```shell
+```
 +------------+---------+----------+
 |   TOT:110  | Actual: | Actual:  |
 |  pos: 88   |   POS   |   NEG    |
