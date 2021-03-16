@@ -8,9 +8,9 @@ Lo script è stato realizzato per testare fuori dal browser l'algoritmo dell'est
 
 L'algoritmo di detection è basato su features domain-based, prese da [phishing_catcher](https://github.com/x0rz/phishing_catcher), e features content-based, estrapolate dai seguenti articoli:
 
-* "Machine Learning Approach to Phishing Detection"
-* "Intelligent phishing url detection using association rule mining"
-* "Intelligent Rule based Phishing Websites Classification"
+* A. R. Sura, J. Kini, and K. Athrey. [Machine Learning Approach to Phishing Detection](https://github.com/arvind-rs/phishing_detector/blob/master/Final%20Report/Report.pdf)
+* Jeeva, S.C., Rajsingh, E.B. Intelligent phishing url detection using association rule mining. Hum. Cent. Comput. Inf. Sci. 6, 10 (2016). https://doi.org/10.1186/s13673-016-0064-3
+* Mohammad, Rami & Mccluskey, T. & Thabtah, Fadi. (2013). Intelligent Rule based Phishing Websites Classification. IET Information Security. 8. 10.1049/iet-ifs.2013.0202. 
 
 L'algoritmo di detection mette insieme i due approcci. Ad ogni dominio nella lista verrà assegnato un punteggio in base al quale verrà etichettato come di phishing o meno.
 Il punteggi assegnati alle features domain-based sono stati estrapolati dal tool di [x0rz](https://github.com/x0rz), mentre i pesi delle features content-based sono estratti dagli articoli sopra indicati, in particolor modo da **"[Machine Learning Approach to Phishing Detection](https://github.com/arvind-rs/phishing_detector/blob/master/Final%20Report/Report.pdf)"**.
