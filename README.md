@@ -1,6 +1,6 @@
 # phishing_ext_tester
 
-Python script to test the algorimto of the anti-phishing extension.
+Python script to test the algorithm of the anti-phishing extension.
 
 ## How work?
 
