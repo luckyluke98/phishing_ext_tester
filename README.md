@@ -28,8 +28,10 @@ To verify the correct detection, the resulting values (0 or 1) will be compared 
 ```yaml
 data:
   ...
-  'safe_domain': 0
-  'phishing_domain': 1
+  #'safe_domain': 0
+  #'phishing_domain': 1
+  'www.google.com': 0
+  'www.scam.com': 1
   ...
 ```
 At the end of the script the following results will be displayed (results for ```dataset.yaml```):
