@@ -13,7 +13,7 @@ L'algoritmo di detection è basato su features domain-based, prese da [phishing_
 * "Intelligent Rule based Phishing Websites Classification"
 
 L'algoritmo di detection mette insieme i due approcci. Ad ogni dominio nella lista verrà assegnato un punteggio in base al quale verrà etichettato come di phishing o meno.
-Il punteggi assegnati alle features domain-based sono stati estrapolati dal tool di [x0rz](https://github.com/x0rz), mentre i pesi delle features content-based sono estratti dagli articoli sopra indicati, in particolor modo da **"Machine Learning Approach to Phishing Detection"**.
+Il punteggi assegnati alle features domain-based sono stati estrapolati dal tool di [x0rz](https://github.com/x0rz), mentre i pesi delle features content-based sono estratti dagli articoli sopra indicati, in particolor modo da **"[Machine Learning Approach to Phishing Detection](https://github.com/arvind-rs/phishing_detector/blob/master/Final%20Report/Report.pdf)"**.
 
 L'algoritmo andrà a verificare la presenza o meno di tutte le features. Le features content-based restituiranno ```1``` (se la features si verifica), ```0``` (se si verifica parzialmente) o ```-1``` (se non si verifica),  successivamente questi valori verranno moltiplicati con i rispettivi pesi. Quindi il punteggio content-based sarà un numero ```<=0``` o ```>=0```.
 
