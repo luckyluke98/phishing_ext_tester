@@ -320,7 +320,7 @@ def score_html(html, url):
 	score += is_iframe_present(html)*(-1.666)#-
 	score += is_img_from_different_domain(html, url)*(3.332)
 	score += is_favicon_domain_unidentical(html, url)*(-2.779)#-
-	score += is_anchor_from_different_domain(html, url)*(26.664)
+	score += is_anchor_from_different_domain(html, url)*(2.6664)
 	score += is_scriptlink_from_different_domain(html, url)*(6.667)
 	score += is_form_action_invalid(html, url)*(5.554)
 	#print('\t Score HTML: {}'.format(score))
